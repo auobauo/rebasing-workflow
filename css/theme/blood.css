@@ -1,55 +1,31 @@
 /**
- * Theme for reveal.js based on the O'Reilly cover for Git for Teams
+ * Blood theme for reveal.js
+ * Author: Walther http://github.com/Walther
  *
- * Copyright (C) 2015 Emma Jane Hogbin Westby, http://gitforteams.com
+ * Designed to be used with highlight.js theme
+ * "monokai_sublime.css" available from
+ * https://github.com/isagalaev/highlight.js/
+ *
+ * For other themes, change $codeBackground accordingly.
+ *
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700,400italic,700italic);
-a:href {
-  text-decoration: underline; }
-
-.reveal img[src$="png"] {
-  max-height: 80%; }
-
-.reveal img[src$="png"] {
-  max-width: 80%; }
-
-.reveal img[alt=cover_illustration] {
-  height: 300px; }
-
-.reveal img[alt$=small] {
-  max-height: 600px; }
-
-code {
-  padding: 1px;
-  background-color: #fafafa;
-  color: #000; }
-
-.reveal li strong {
-  color: #999; }
-
-.reveal h1 strong, .reveal h2 strong, .reveal h3 strong {
-  color: #7e167e; }
-
-.reveal em, .reveal i {
-  font-style: normal;
-  color: #000; }
-
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background: #222;
+  background-color: #222; }
 
 .reveal {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 30px;
+  font-family: Ubuntu, "sans-serif";
+  font-size: 36px;
   font-weight: normal;
-  color: #666; }
+  color: #eee; }
 
 ::selection {
   color: #fff;
-  background: #ccc;
+  background: #a23;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -67,13 +43,13 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #B30A84;
-  font-family: "Open Sans Condensed", Impact, sans-serif;
+  color: #eee;
+  font-family: Ubuntu, "sans-serif";
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: none;
-  text-transform: none;
-  text-shadow: none;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #222;
   word-wrap: break-word; }
 
 .reveal h1 {
@@ -89,7 +65,7 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: none; }
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
 /*********************************************
  * OTHER
@@ -231,20 +207,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #000;
+  color: #a23;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #666666;
+  color: #dd5566;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: black; }
+  background: #6a1520; }
 
 /*********************************************
  * IMAGES
@@ -252,7 +228,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #666;
+  border: 4px solid #eee;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -266,7 +242,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #000;
+  border-color: #a23;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -274,31 +250,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #000; }
+  border-right-color: #a23; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #000; }
+  border-left-color: #a23; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #000; }
+  border-bottom-color: #a23; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #000; }
+  border-top-color: #a23; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #666666; }
+  border-right-color: #dd5566; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #666666; }
+  border-left-color: #dd5566; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #666666; }
+  border-bottom-color: #dd5566; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #666666; }
+  border-top-color: #dd5566; }
 
 /*********************************************
  * PROGRESS BAR
@@ -307,7 +283,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #000;
+  background: #a23;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -316,27 +292,24 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #000; }
+  color: #a23; }
 
-.reveal section img {
-  border: none;
-  margin: 0;
-  box-shadow: none; }
+.reveal p {
+  font-weight: 300;
+  text-shadow: 1px 1px #222; }
 
-.reveal ol, .reveal ul, .reveal dl {
-  margin: 0; }
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 700; }
 
-.reveal ol {
-  width: 50%; }
+.reveal p code {
+  background-color: #23241f;
+  display: inline-block;
+  border-radius: 7px; }
 
-.reveal pre code {
-  font-size: 1.5em;
-  max-height: inherit;
-  overflow: none;
-  padding: 15px; }
-
-.reveal pre code span {
-  line-height: 1.3em; }
-
-.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled, .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-bottom-color: #ddd; }
+.reveal small code {
+  vertical-align: baseline; }

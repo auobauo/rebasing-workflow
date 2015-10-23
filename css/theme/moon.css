@@ -1,55 +1,32 @@
 /**
- * Theme for reveal.js based on the O'Reilly cover for Git for Teams
- *
- * Copyright (C) 2015 Emma Jane Hogbin Westby, http://gitforteams.com
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700,400italic,700italic);
-a:href {
-  text-decoration: underline; }
-
-.reveal img[src$="png"] {
-  max-height: 80%; }
-
-.reveal img[src$="png"] {
-  max-width: 80%; }
-
-.reveal img[alt=cover_illustration] {
-  height: 300px; }
-
-.reveal img[alt$=small] {
-  max-height: 600px; }
-
-code {
-  padding: 1px;
-  background-color: #fafafa;
-  color: #000; }
-
-.reveal li strong {
-  color: #999; }
-
-.reveal h1 strong, .reveal h2 strong, .reveal h3 strong {
-  color: #7e167e; }
-
-.reveal em, .reveal i {
-  font-style: normal;
-  color: #000; }
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto; }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background: #002b36;
+  background-color: #002b36; }
 
 .reveal {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
   font-weight: normal;
-  color: #666; }
+  color: #93a1a1; }
 
 ::selection {
   color: #fff;
-  background: #ccc;
+  background: #d33682;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -67,12 +44,12 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #B30A84;
-  font-family: "Open Sans Condensed", Impact, sans-serif;
+  color: #eee8d5;
+  font-family: "League Gothic", Impact, sans-serif;
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: none;
-  text-transform: none;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -231,20 +208,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #000;
+  color: #268bd2;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #666666;
+  color: #78b9e6;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: black; }
+  background: #1a6091; }
 
 /*********************************************
  * IMAGES
@@ -252,7 +229,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #666;
+  border: 4px solid #93a1a1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -266,7 +243,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #000;
+  border-color: #268bd2;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -274,31 +251,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #000; }
+  border-right-color: #268bd2; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #000; }
+  border-left-color: #268bd2; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #000; }
+  border-bottom-color: #268bd2; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #000; }
+  border-top-color: #268bd2; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #666666; }
+  border-right-color: #78b9e6; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #666666; }
+  border-left-color: #78b9e6; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #666666; }
+  border-bottom-color: #78b9e6; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #666666; }
+  border-top-color: #78b9e6; }
 
 /*********************************************
  * PROGRESS BAR
@@ -307,7 +284,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #000;
+  background: #268bd2;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -316,27 +293,4 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #000; }
-
-.reveal section img {
-  border: none;
-  margin: 0;
-  box-shadow: none; }
-
-.reveal ol, .reveal ul, .reveal dl {
-  margin: 0; }
-
-.reveal ol {
-  width: 50%; }
-
-.reveal pre code {
-  font-size: 1.5em;
-  max-height: inherit;
-  overflow: none;
-  padding: 15px; }
-
-.reveal pre code span {
-  line-height: 1.3em; }
-
-.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled, .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-bottom-color: #ddd; }
+  color: #268bd2; }
