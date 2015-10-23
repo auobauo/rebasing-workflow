@@ -168,7 +168,7 @@ Rebasing:
 <g opacity="0">
   <text x="60" y="140" opacity="0">updated upstream head ... really means ...</text>
   <text x="60" y="180" opacity="0">identify new upstream branch tip</text>
-  <text x="60" y="140">forward base to newest commit</text>
+  <text x="60" y="130">forward base to newest commit</text>
   <animate attributeType="CSS" attributeName="opacity"
     from="0"
     to="1"
